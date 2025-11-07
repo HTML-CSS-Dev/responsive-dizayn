@@ -1,0 +1,173 @@
+@media only screen and (max-width:640px) {
+body {
+    padding:0 20px
+}
+
+.article-wrapper > .center {
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+#flowers {
+    display: none;
+}
+
+.article-wrapper .bottom {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.article-wrapper .bottom > .cards > img {
+    width:100%;
+    height:auto;
+}
+
+.one {
+    display: none;
+}
+
+.two {
+    display: none;
+}
+
+.main-wrapper > .bottom {
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+}
+
+.three {
+grid-column:1/2;
+grid-row:1/2;
+}
+
+.four {
+grid-column:2/3;
+grid-row:1/2;
+}
+}
+
+
+@media only screen and (max-width:530px) {
+    .article-wrapper > .center {
+    grid-template-columns: repeat(2,1fr) ;
+}
+
+.main-wrapper > .bottom {
+    grid-template-columns: repeat(1,1fr);
+    gap:30px;
+}
+
+.three {
+    grid-column:1/2;
+    grid-row:1/2;
+}
+
+.four {
+    grid-column:1/2;
+    grid-row:2/3;
+}
+}
+
+@media only screen and (max-width:440px) {
+    .article-wrapper > .top {
+        grid-template-columns:240px;
+        gap:10px;
+        justify-content: center;
+        gap:5px
+    }
+
+    .view {
+        text-align: center;
+    }
+
+
+    .main-wrapper > .top {
+        grid-template-columns:180px;
+        gap:5px;
+        justify-content:center;
+    }
+
+    h1 {
+    text-align: center;
+    }
+
+    .article-wrapper > .center {
+    grid-template-columns:1fr;
+    justify-content: center;
+}
+
+}
+
+@media (min-width:641px) {
+
+body {
+    padding:10px
+}
+    .article-wrapper > .center {
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+.article-wrapper > .bottom {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.article-wrapper .bottom > .cards > img {
+    width:100%;
+    height:auto;
+}
+
+.two {
+display: none;
+
+}
+
+}
+
+
+@media(min-width:1023px) {
+.article-wrapper .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+
+.one {
+    grid-column:1/3;
+    grid-row:1/2;
+}
+
+
+.two {
+    grid-column:3/4;
+    grid-row:1/3;
+}
+
+.three {
+    grid-column:1/2;
+    grid-row:2/3;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+Breakpoints:
+768px - 1023px - katta tablet va PC - lg
+1024px - 1179px - katta tablet va PC - xl
+1280px - 1535px - PC - 2xl
+
+
+
+Media query (CSS qoidalar)
+max-width, min-width, max-height, min-height, orientation, print...
+
+1. first-desktop (max-width, breakpoints decreasing)
+2. first-mobile (min-width, breakpoints increasing)
+
+*/
